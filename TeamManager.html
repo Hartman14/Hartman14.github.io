@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html>
-<title>Jordan Hartman</title>
+<title>TYM</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<head>
+<style>
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
 
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover{background-color:#f5f5f5}
+</style>
+</head>
 <body>
 
 <!-- Navbar (sit on top) -->
@@ -13,9 +28,11 @@
     <a href="index.html" class="w3-bar-item w3-button"><b>Jordan Hartman</b></a>
     <!-- Float links to the right. Hide them on small screens -->
     <div class="w3-left w3-hide-small">
-      <a href="#projects" class="w3-bar-item w3-button">Team Stats</a>
-      <a href="#about" class="w3-bar-item w3-button">Match History</a>
-      <a href="#contact" class="w3-bar-item w3-button">Roster</a>
+      <a href="#AboutUs" class="w3-bar-item w3-button">About Us</a>
+      <a href="#TeamRecord" class="w3-bar-item w3-button">Team Record</a>
+      <a href="#RiftStats" class="w3-bar-item w3-button">Rift Stats</a>
+      <a href="#MatchHistory" class="w3-bar-item w3-button">Match History</a>
+      <a href="#Roster" class="w3-bar-item w3-button">Roster</a>
     </div>
   </div>
 </div>
@@ -31,23 +48,34 @@
 
  <!-- Page content -->
  <div class="w3-content w3-padding" style="max-width:1564px">
-  <div class="w3-row-padding">
-   <div class="w3-col l3 m6 w3-margin-bottom">   
-    <div class="w3-display-container">
-     <img src="TYM.jpg" style="width:100%">
-    </div>
-   </div>
+  <!-- About Us Section -->
+  <div class="w3-container w3-padding" id="AboutUs">
+      <p>
+       <img align="Left" src="TYM.jpg" alt="W3Schools.com">
+       <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About Us</h3>
+       North Dakota State University Competative League of Legends ESports Team located in Fargo, ND.
+      </p>
   </div>
-  <!-- Stats Section -->
-  <div class="w3-container w3-padding-32" id="projects">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Team Stats</h3>
+  
+  <!-- Record Section -->
+  <div class="w3-container w3-padding-32" id="TeamRecord">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Team Record</h3>
   </div>
 
 	
 
 
+  <!-- In-Game Stats Section -->
+  <div class="w3-container w3-padding-32" id="RiftStats">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Summoners Rift Stats</h3>
+    <p>
+	
+    </p>
+  </div>
+
+
   <!-- Match History Section -->
-  <div class="w3-container w3-padding-32" id="about">
+  <div class="w3-container w3-padding-32" id="MatchHistory">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Match History</h3>
     <p>
 	
@@ -56,9 +84,46 @@
 
  
   <!-- Roster Section -->
-  <div class="w3-container w3-padding-32" id="contact">
+  <div class="w3-container w3-padding-32" id="Roster">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Roster</h3>
-    
+    <table>
+     <tr href="">
+      <th>Position</th>
+      <th>Summoner Name</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+     </tr>
+     <tr href="">
+      <th>Top Lane</th>
+      <th>Kayan</th>
+      <td>Max</td>
+      <td>Baker</td>
+     </tr>
+     <tr onclick="document.location = 'ForesakenFate.html';">
+      <th>Jungle</th>
+      <th>Foresaken Fate</th>
+      <td>Jordan</td>
+      <td>Hartman</td>
+     </tr>
+     <tr href="">
+      <th>Mid Lane</th>
+      <th>N/A</th>
+      <td>N/A</td>
+      <td>N/A</td>
+     </tr>
+     <tr href="">
+      <th>ADC</th>
+      <th>AceJoker12</th>
+      <td>Jarrett</td>
+      <td>N/A</td>
+     </tr>
+     <tr href="">
+      <th>Support</th>
+      <th>Bubbersby</th>
+      <td>Brandon</td>
+      <td>N/A</td>
+     </tr>
+    </table>
   </div>
   
  <!-- End page content -->
